@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "phone": "ng serve --prod --host 192.168.1.8 --port 8000 --ssl true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

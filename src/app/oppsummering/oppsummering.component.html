@@ -1,0 +1,26 @@
+<table class="table table-responsive" *ngIf="data && data.length">
+	<thead>
+		<tr>
+			<td>Varenr</td>
+			<td>Produkt</td>
+			<td>Unit</td>
+			<td>Kasse</td>
+			<td>Anbrekk</td>
+			<td>Enhet</td>
+			<td>K</td>
+			<td>A</td>
+			<td>Kommentar</td>
+		</tr>
+	</thead>
+	<tr *ngFor="let item of data">
+		<td>{{ item?.Varenr }}</td>
+		<td>{{ item?.Produkt }}</td>
+		<td>{{ item?.Unit }}</td>
+		<td>{{ item?.Kasse }}</td>
+		<td>{{ item?.Anbrekk }}</td>
+		<td>{{ item?.Enhet }}</td>
+		<td>{{ item?.K }}</td>
+		<td>{{ item?.A }}</td>
+		<td>{{ item?.Kommentar }}</td>
+	</tr>
+</table>

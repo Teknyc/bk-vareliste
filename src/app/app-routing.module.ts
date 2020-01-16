@@ -5,6 +5,7 @@ import { UploaderComponent } from './uploader/uploader.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { OppsummeringComponent } from './oppsummering/oppsummering.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
 			{ path: '', component: DashboardComponent },
 			{ path: 'upload', component: UploaderComponent },
 			{ path: 'tellelista', component: TellerlistaComponent },
+			{ path: 'oppsummering', component: OppsummeringComponent },
 			{ path: 'product/:id', component: ProductComponent },
 
 		]

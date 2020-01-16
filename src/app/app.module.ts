@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TellerlistaComponent } from './tellerlista/tellerlista.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductComponent } from './product/product.component';
+import { OppsummeringComponent } from './oppsummering/oppsummering.component';
 
 @NgModule({
    declarations: [
@@ -19,12 +20,13 @@ import { ProductComponent } from './product/product.component';
       UploaderComponent,
       TellerlistaComponent,
       DashboardComponent,
-      ProductComponent
+      ProductComponent,
+      OppsummeringComponent
    ],
    imports: [
       BrowserModule,
-	  AppRoutingModule,
-	  FormsModule,
+      AppRoutingModule,
+      FormsModule,
       QRCodeModule,
       ZXingScannerModule
    ],

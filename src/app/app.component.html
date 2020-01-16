@@ -1,10 +1,12 @@
 <div class="container">
 	<div class="row mb-4">
 		<div class="col-md-12">
-			<button class="btn btn-primary mr-3"
-					[routerLink]="['upload']">Last opp ny liste</button>
-			<button class="btn btn-primary"
-					[routerLink]="['tellelista']">Tellelista</button>
+			<button class="btn btn-primary mr-2 btn-sm"
+					[routerLink]="['upload']">QR koder</button>
+			<button class="btn btn-primary  mr-2 btn-sm"
+					[routerLink]="['tellelista']">Scan vare</button>
+			<button class="btn btn-primary btn-sm"
+					[routerLink]="['oppsummering']">Oppsummering</button>
 		</div>
 	</div>
 	<router-outlet></router-outlet>

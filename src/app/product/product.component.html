@@ -3,14 +3,16 @@
 
 <div class="form-group">
 	<label for="kasse">Kasse</label>
+	<input type="tel" class="w-100" id="enhet" [(ngModel)]="product.Kasse">
 </div>
 <div class="form-group">
 	<label for="anbrekk">Anbrekk</label>
+	<input type="tel" class="w-100" id="enhet" [(ngModel)]="product.Anbrekk">
 
 </div>
 <div class="form-group">
 	<label for="enhet">Enhet</label>
-	<input type="tel" id="enhet" [(ngModel)]="product.Enhet">
+	<input type="tel" class="w-100" id="enhet" [(ngModel)]="product.Enhet">
 </div>
 
-<pre>{{ data | json }}</pre>
+<button class="btn-success" [routerLink]="['/tellelista']" >Scan ny vare</button>
