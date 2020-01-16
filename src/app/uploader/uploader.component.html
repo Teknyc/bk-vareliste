@@ -1,0 +1,18 @@
+<!-- <div class="mb-4">
+	<input type="file"
+	   (change)="onFileChange($event)"
+	   multiple="false" />
+
+</div> -->
+
+<div class="mb-4" *ngIf="dataWithoutHeaders && dataWithoutHeaders.length">
+	<button class="btn btn-success" (click)="showQRCodes = true">Generer QR koder</button>
+
+	<div class="row" *ngIf="showQRCodes">
+		<div class="col-md-12" *ngFor="let row of dataWithoutHeaders">
+			<qrcode [qrdata]="row.Varenr + ''" [width]="400" [errorCorrectionLevel]="'M'"></qrcode>
+			<h4>{{ row.Produkt }}</h4>
+		</div>
+	</div>
+
+</div>

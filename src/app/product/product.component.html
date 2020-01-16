@@ -1,0 +1,16 @@
+<h2>{{ product.Produkt }}</h2>
+<p>{{ product.Kommentar }}</p>
+
+<div class="form-group">
+	<label for="kasse">Kasse</label>
+</div>
+<div class="form-group">
+	<label for="anbrekk">Anbrekk</label>
+
+</div>
+<div class="form-group">
+	<label for="enhet">Enhet</label>
+	<input type="tel" id="enhet" [(ngModel)]="product.Enhet">
+</div>
+
+<pre>{{ data | json }}</pre>
